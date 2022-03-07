@@ -1,0 +1,9 @@
+---
+applications:
+- name: cf-nodejs
+  memory: 512M
+  instances: 1
+  routes:
+    - route: cf-nodejs-prd.cfapps.us10.hana.ondemand.com
+  services:
+    - jco-xsuaa
